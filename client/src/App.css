@@ -1,10 +1,19 @@
-html, body {
+html,
+body {
   margin: 0;
 }
 
+body {
+  font-family: Inter;
+}
+
+.container {
+  margin: 45px 40px;
+}
+
 /* Header */
-header{
-  background:#F55A5A;
+header {
+  background: #f55a5a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,5 +29,69 @@ header > img {
 header > h1 {
   font-size: 0.9rem;
   font-weight: 500;
-  font-family: Inter;
+}
+
+/* article */
+
+/* main image */
+article.journal-entry {
+  display: flex;
+}
+
+article.journal-entry .main-img-containter {
+  width: 125px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+article.journal-entry img.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* map marker */
+.info-container img.map-marker {
+  width: 7px;
+  margin-right: 4px;
+}
+
+/* Country font style*/
+.info-container span.country {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+
+/* link to map */
+.info-container a {
+  color: #2b283a;
+  font-size: 0.7rem;
+}
+
+.info-container a:visited {
+  color: #918e9b;
+}
+
+.info-container h2.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+
+/* dates */
+.info-container p.trip-dates {
+  font-weight: bold;
+}
+
+/* Text */
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
